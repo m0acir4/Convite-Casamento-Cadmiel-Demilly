@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #F4F8FD;
+    --bg-card: #FFFFFF;
+    --ink-primary: #0F2347;
+    --ink-secondary: #2C4A7A;
+    --ink-muted: #5A78A3;
+    --royal-primary: #1B448C;
+    --royal-dark: #122E63;
+    --celeste-primary: #63A4E8;
+    --celeste-soft: #E6F0FA;
+    --celeste-border: #C9DDF3;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-paper);
+    color: var(--ink-primary);
+  }
+
+  .font-serif-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-script {
+    font-family: 'Alex Brush', cursive;
+  }
+}
+
+/* Soft Royal Blue & Celeste watercolor paper texture */
+.paper-texture {
+  background-color: #F4F8FD;
+  background-image:
+    radial-gradient(at 18% 12%, rgba(135, 190, 248, 0.24) 0px, transparent 55%),
+    radial-gradient(at 82% 85%, rgba(27, 68, 140, 0.08) 0px, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(99, 164, 232, 0.03) 0px,
+      rgba(99, 164, 232, 0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

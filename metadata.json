@@ -1,0 +1,6 @@
+{
+  "name": "Cadmiel & Demilly — Convite de Casamento",
+  "description": "Convite de casamento digital de Cadmiel e Demilly — 26 de Dezembro de 2026, no Espaço de Eventos Monte Sião.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
